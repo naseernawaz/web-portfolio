@@ -2,11 +2,6 @@
 
 A modern, responsive, and visually engaging personal portfolio website to showcase my skills, projects, and professional experience as a Front-End Web Developer.
 
-## ✨ Live Demo
-
-[View Live Portfolio](#) https://naseernawaz.github.io/web-portfolio/
----
-
 ## 🚀 Features
 
 - **Fully Responsive Design:** Seamlessly adapts to all devices (desktops, tablets, and mobiles).
