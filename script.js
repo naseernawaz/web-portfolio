@@ -167,16 +167,6 @@ document.addEventListener('DOMContentLoaded', function () {
     updateNavbarOnScroll();
     window.addEventListener('scroll', updateNavbarOnScroll);
 
-    // Form submission
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-            alert('Thank you for your message! I will get back to you soon.');
-            this.reset();
-        });
-    }
-
     // Animate progress bars on scroll
     const animateProgressBars = () => {
         const progressBars = document.querySelectorAll('.progress-bar');

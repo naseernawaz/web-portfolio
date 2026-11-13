@@ -376,12 +376,12 @@ body.light-theme .navbar-nav .nav-link:hover {
 
 /* ===== Statistics Section ===== */
 .statistics-section {
-    padding: 4rem 1rem;
+    padding: 2rem 1rem;
 }
 
 .stat-item {
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 1rem 0.5rem;
     position: relative;
 }
 
@@ -1107,6 +1107,10 @@ body.light-theme .navbar-nav .nav-link:hover {
     transition: all 0.3s ease;
 }
 
+.contact-item > div:last-child {
+    min-width: 0;
+}
+
 .contact-item:hover {
     border-color: var(--primary-alpha-50);
     box-shadow: 0 10px 30px var(--primary-alpha-20);
@@ -1138,6 +1142,33 @@ body.light-theme .navbar-nav .nav-link:hover {
 .contact-value {
     color: var(--text-primary);
     font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 575.98px) {
+    .contact-section {
+        padding: 4rem 0.75rem;
+    }
+
+    .contact-form-wrapper {
+        padding: 1.25rem;
+    }
+
+    .contact-item {
+        gap: 0.75rem;
+        padding: 1rem;
+    }
+
+    .contact-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 1.25rem;
+    }
+
+    .contact-value {
+        font-size: 0.95rem;
+        line-height: 1.45;
+    }
 }
 
 /* ===== Footer ===== */
@@ -1204,7 +1235,39 @@ body.light-theme .navbar-nav .nav-link:hover {
 
 @media (max-width: 767px) {
     .hero-section {
-        padding: 6rem 1rem 2rem;
+        min-height: auto;
+        padding: 6rem 1rem 1rem;
+    }
+
+    .hero-content {
+        padding: 1.5rem 0 1rem;
+        text-align: center;
+    }
+
+    .hero-description {
+        max-width: 34rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 0.75rem;
+    }
+
+    .hero-buttons .btn {
+        padding: 0.7rem 1rem;
+        font-size: 0.95rem;
+        white-space: nowrap;
+    }
+
+    .statistics-section {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .stat-item {
+        padding: 0.5rem 0.25rem;
     }
 
     .hero-name {
@@ -1424,6 +1487,10 @@ h2.section-title {
 }
 
 @media (max-width: 767.98px) {
+    .about-skills-section {
+        padding: 3rem 0;
+    }
+
     .skills-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 12px;

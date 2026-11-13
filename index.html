@@ -372,20 +372,23 @@
                 <div class="col-lg-6">
                     <div class="contact-form-wrapper">
                         <h3>Send Me a Message</h3>
-                        <form id="contactForm">
+                        <form id="contactForm" action="https://formsubmit.co/muhammadnaseer7025@gmail.com"
+                            method="POST">
+                            <input type="hidden" name="_subject" value="New message from portfolio">
+                            <input type="hidden" name="_template" value="table">
                             <div class="mb-4">
                                 <label for="name" class="form-label">Name</label>
-                                <input type="text" class="form-control custom-input" id="name" placeholder="Your Name"
-                                    required>
+                                <input type="text" class="form-control custom-input" id="name" name="name"
+                                    placeholder="Your Name" required>
                             </div>
                             <div class="mb-4">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control custom-input" id="email"
+                                <input type="email" class="form-control custom-input" id="email" name="email"
                                     placeholder="your.email@example.com" required>
                             </div>
                             <div class="mb-4">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control custom-input" id="message" rows="5"
+                                <textarea class="form-control custom-input" id="message" name="message" rows="5"
                                     placeholder="Your message here..." required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary-custom w-100">Send Message</button>

@@ -10,7 +10,7 @@ A modern, responsive, and visually engaging personal portfolio website to showca
 - **Interactive "About" Section:** Presents personal info in a unique, stylized JavaScript code block format.
 - **Skills Showcase:** Visually displays technical proficiency with animated progress bars.
 - **Project Gallery:** A horizontally scrollable gallery to highlight projects with images, descriptions, and tech stacks.
-- **Contact Form:** A functional form (logic to be added) connected via contact information.
+- **Contact Form:** Sends submissions to the portfolio email via FormSubmit after one-time email activation.
 - **Social & Contact Links:** Quick access to email, phone, LinkedIn, and GitHub.
 - **Smooth Scrolling & Navigation:** Intuitive navigation using Bootstrap 5.
 
@@ -19,7 +19,7 @@ A modern, responsive, and visually engaging personal portfolio website to showca
 - **HTML5** - Semantic markup for structure.
 - **CSS3** - Custom styling, animations, and gradients.
 - **Bootstrap 5** - For responsive grid, components, and utility classes.
-- **JavaScript (Vanilla)** - For dynamic elements like the code animation and form handling (see `script.js`).
+- **JavaScript (Vanilla)** - For dynamic elements like the code animation and theme toggle (see `script.js`).
 - **Font Awesome 6** - For high-quality icons.
 - **Google Fonts (Poppins)** - For modern typography.
 
@@ -132,10 +132,6 @@ Edge	90+	✅ Fully Supported
 Opera	75+	✅ Fully Supported
 Mobile Browsers	Latest	✅ Fully Responsive
 🔮 Future Enhancements
-Backend Integration - Add Node.js/Express backend for contact form
-
-Email Service - Integrate EmailJS or Nodemailer for form submissions
-
 Dark/Light Mode - Add theme switcher with localStorage persistence
 
 Project Filtering - Filter projects by category (React, Bootstrap, etc.)
