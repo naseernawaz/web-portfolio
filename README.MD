@@ -2,12 +2,6 @@
 
 A modern, responsive, and visually engaging personal portfolio website to showcase my skills, projects, and professional experience as a Front-End Web Developer.
 
-## ✨ Live Demo
-
-[View Live Portfolio](#) <!-- Add your hosted link here (e.g., Netlify, Vercel, GitHub Pages) -->
-
----
-
 ## 🚀 Features
 
 - **Fully Responsive Design:** Seamlessly adapts to all devices (desktops, tablets, and mobiles).
@@ -184,9 +178,6 @@ Age: 18
 
 Location: Pakistan
 
-https://img.shields.io/badge/Portfolio-View-06b6d4?style=flat-square&logo=google-chrome&logoColor=white
-https://img.shields.io/badge/GitHub-Follow-181717?style=flat-square&logo=github&logoColor=white
-https://img.shields.io/badge/Email-Contact-EA4335?style=flat-square&logo=gmail&logoColor=white
 
 🙏 Acknowledgments
 Bootstrap Team - For the amazing CSS framework
