@@ -15,7 +15,7 @@ A modern, responsive, and visually engaging personal portfolio website to showca
 - **Dynamic Hero Section:** Features an animated "code rain" background and a typewriter effect.
 - **Interactive "About" Section:** Presents personal info in a unique, stylized JavaScript code block format.
 - **Skills Showcase:** Visually displays technical proficiency with animated progress bars.
-- **Project Gallery:** A grid layout to highlight key projects with images, descriptions, and tech stacks.
+- **Project Gallery:** A horizontally scrollable gallery to highlight projects with images, descriptions, and tech stacks.
 - **Contact Form:** A functional form (logic to be added) connected via contact information.
 - **Social & Contact Links:** Quick access to email, phone, LinkedIn, and GitHub.
 - **Smooth Scrolling & Navigation:** Intuitive navigation using Bootstrap 5.

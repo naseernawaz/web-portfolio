@@ -34,7 +34,11 @@
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
-                    <a href="#" class="btn btn-cv">
+                    <button class="btn btn-theme-toggle" id="themeToggleBtn" aria-label="Toggle dark and light theme"
+                        title="Toggle theme">
+                        <i class="fas fa-moon" id="themeIcon"></i>
+                    </button>
+                    <a href="assets/images/Naseer_Nawaz_CV(1).pdf" download class="btn btn-cv">
                         <i class="fas fa-download me-2"></i>Download CV
                     </a>
                 </div>
@@ -53,7 +57,9 @@
                     <div class="hero-content">
                         <p class="hello-text">Hello, I'm</p>
                         <h1 class="hero-name">Naseer Nawaz</h1>
-                        <h2 class="hero-title">And I'm a <span class="highlight">Web Developer</span></h2>
+                        <h2 class="hero-title">And I'm a <span class="highlight hero-role"><span id="typedRole"
+                                    aria-live="off">Web Developer</span><span class="typing-cursor"
+                                    aria-hidden="true"></span></span></h2>
                         <p class="hero-description">
                             I'm passionate about creating responsive and modern websites with clean and efficient code
                             using HTML, CSS, and Bootstrap.
@@ -66,9 +72,8 @@
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2">
                     <div class="hero-image">
-                        <div class="glow-effect"></div>
                         <div class="profile-img-wrapper">
-                            <img src="./assets/images/naseernawaz.png" alt="Naseer Nawaz" class="profile-img">
+                            <img src="./assets/images/naseernawazpng.png" alt="Naseer Nawaz" class="profile-img">
                         </div>
                     </div>
                 </div>
@@ -80,211 +85,173 @@
     <section class="statistics-section">
         <div class="container">
             <div class="row">
-                <div class="col-6 col-md-3">
+                <div class="col-4">
                     <div class="stat-item">
-                        <h3 class="stat-number">5+</h3>
+                        <h3 class="stat-number stat-number-experience">2+</h3>
                         <p class="stat-label">Years of Experience</p>
                     </div>
                 </div>
-                <div class="col-6 col-md-3">
+                <div class="col-4">
                     <div class="stat-item">
-                        <h3 class="stat-number">15+</h3>
+                        <h3 class="stat-number stat-number-projects">5+</h3>
                         <p class="stat-label">Projects Completed</p>
                     </div>
                 </div>
-                <div class="col-6 col-md-3">
+                <div class="col-4">
                     <div class="stat-item">
-                        <h3 class="stat-number">3+</h3>
+                        <h3 class="stat-number stat-number-technologies">3+</h3>
                         <p class="stat-label">Technologies Mastered</p>
                     </div>
                 </div>
-                <div class="col-6 col-md-3">
-                    <div class="stat-item">
-                        <h3 class="stat-number">60+</h3>
-                        <p class="stat-label">Satisfied Clients</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="floating-element"></div>
-        <div class="floating-element"></div>
-
-        <div class="about-container">
-            <div class="section-title">
-                <h1>About Me</h1>
-                <p>Developer • Designer • Tech Enthusiast</p>
-            </div>
-
-            <div class="content-wrapper">
-                <!-- Profile Picture - Centered with image -->
-                <div class="profile-picture-box">
-                    <div class="profile-frame">
-                        <div class="profile-img">
-                            <!-- Profile Image - Replace with your own image -->
-                            <img src="./assets/images/naseernawaz.png" alt="Naseer Nawaz - Frontend Developer">
-                        </div>
-                    </div>
-                    <div class="profile-status">
-                        <span class="status-tag">🚀 Available for Work</span>
-                    </div>
-                </div>
-
-                <!-- Code Block - Centered -->
-                <div class="code-block">
-                    <div class="code-header">
-                        <div class="code-title">#personal-info.js</div>
-                        <div class="code-language">JavaScript</div>
-                    </div>
-
-                    <div class="code-content">
-                        <span class="comment">// Personal Information</span><br>
-                        <span class="selector">const</span> developer = {<br>
-                        &nbsp;&nbsp;<span class="property">name</span>: <span class="string">"Naseer Nawaz"</span>,<br>
-                        &nbsp;&nbsp;<span class="property">age</span>: <span class="number">18</span>,<br>
-                        &nbsp;&nbsp;<span class="property">role</span>: <span class="string">"Frontend
-                            Developer"</span>,<br>
-                        &nbsp;&nbsp;<span class="property">experience</span>: <span class="string">"2+
-                            Years"</span>,<br>
-                        &nbsp;&nbsp;<span class="property">location</span>: <span class="string">"Pakistan"</span><br>
-                        };<br><br>
-
-
-                    </div>
-                </div>
-
-                <div class="about-description">
-                    <p>
-                        I am a passionate <span class="highlight">Front-End Web Developer</span> with expertise in HTML,
-                        CSS, and JavaScript.
-                        I specialize in creating responsive, interactive, and user-friendly websites that
-                        provide exceptional user experiences across all devices.
-                    </p>
-
-                    <p>
-                        With <span class="highlight">2 years of hands-on experience</span>, I've successfully delivered
-                        numerous projects
-                        ranging from simple landing pages to complex web applications. My approach
-                        combines technical precision with creative design thinking.
-                    </p>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
+    <!-- About & Skills Section -->
+    <section id="about" class="about-skills-section">
         <div class="container">
-            <h2 class="section-title">My Skills</h2>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <div class="skill-icon">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <div class="skill-info">
-                                <div class="d-flex justify-content-between mb-2">
-                                    <span class="skill-name">HTML5</span>
-                                    <span class="skill-percentage">95%</span>
+            <div class="row align-items-start">
+                <!-- Left Side: About Me -->
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="about-container">
+                        <div class="section-title text-lg-start text-center">
+                            <h1>About Me</h1>
+                            <p>Developer • Designer • Tech Enthusiast</p>
+                        </div>
+
+                        <div class="content-wrapper">
+                            <!-- Profile Picture - Centered with image -->
+                            <div class="profile-picture-box">
+                                <div class="profile-frame">
+                                    <div class="profile-img">
+                                        <!-- Profile Image -->
+                                        <img src="./assets/images/naseernawaz.png"
+                                            alt="Naseer Nawaz - Frontend Developer">
+                                    </div>
                                 </div>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 95%"></div>
+                                <div class="profile-status">
+                                    <span class="status-tag">🚀 Available for Work</span>
+                                </div>
+                            </div>
+
+                            <!-- Code Block - Centered -->
+                            <div class="code-block">
+                                <div class="code-header">
+                                    <div class="code-title">#personal-info.js</div>
+                                    <div class="code-language">JavaScript</div>
+                                </div>
+
+                                <div class="code-content">
+                                    <span class="comment">// Personal Information</span><br>
+                                    <span class="selector">const</span> developer = {<br>
+                                    &nbsp;&nbsp;<span class="property">name</span>: <span class="string">"Naseer
+                                        Nawaz"</span>,<br>
+                                    &nbsp;&nbsp;<span class="property">age</span>: <span class="number">18</span>,<br>
+                                    &nbsp;&nbsp;<span class="property">role</span>: <span class="string">"Frontend
+                                        Developer"</span>,<br>
+                                    &nbsp;&nbsp;<span class="property">experience</span>: <span class="string">"2+
+                                        Years"</span>,<br>
+                                    &nbsp;&nbsp;<span class="property">location</span>: <span
+                                        class="string">"Pakistan"</span><br>
+                                    };<br><br>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Right Side: Skills -->
                 <div class="col-lg-6">
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <div class="skill-icon">
-                                <i class="fas fa-palette"></i>
-                            </div>
-                            <div class="skill-info">
-                                <div class="d-flex justify-content-between mb-2">
-                                    <span class="skill-name">CSS3</span>
-                                    <span class="skill-percentage">90%</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 90%"></div>
-                                </div>
-                            </div>
+                    <div class="skills-container" id="skills">
+                        <div class="section-title text-lg-start text-center">
+                            <h1>My Skills</h1>
+                            <p>Technologies I work with</p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <div class="skill-icon">
-                                <i class="fab fa-js"></i>
+
+                        <div class="skills-grid">
+                            <!-- HTML5 -->
+                            <div class="skill-card-modern">
+                                <img src="./assets/images/icons/html5.svg" class="skill-icon-modern" alt="HTML5"
+                                    width="48" height="48" loading="lazy">
+                                <span class="skill-name-modern">HTML5</span>
+                                <span class="skill-cat-modern">Frontend</span>
                             </div>
-                            <div class="skill-info">
-                                <div class="d-flex justify-content-between mb-2">
-                                    <span class="skill-name">JavaScript</span>
-                                    <span class="skill-percentage">85%</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 85%"></div>
-                                </div>
+                            <!-- CSS3 -->
+                            <div class="skill-card-modern">
+                                <img src="./assets/images/icons/css3.svg" class="skill-icon-modern" alt="CSS3"
+                                    width="48" height="48" loading="lazy">
+                                <span class="skill-name-modern">CSS3</span>
+                                <span class="skill-cat-modern">Frontend</span>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <div class="skill-icon">
-                                <i class="fab fa-bootstrap"></i>
+                            <!-- Bootstrap -->
+                            <div class="skill-card-modern">
+                                <img src="./assets/images/icons/bootstrap.svg" class="skill-icon-modern" alt="Bootstrap"
+                                    width="48" height="48" loading="lazy">
+                                <span class="skill-name-modern">Bootstrap</span>
+                                <span class="skill-cat-modern">Styling</span>
                             </div>
-                            <div class="skill-info">
-                                <div class="d-flex justify-content-between mb-2">
-                                    <span class="skill-name">Bootstrap</span>
-                                    <span class="skill-percentage">92%</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 92%"></div>
-                                </div>
+                            <!-- JavaScript -->
+                            <div class="skill-card-modern">
+                                <img src="./assets/images/icons/javascript.svg" class="skill-icon-modern"
+                                    alt="JavaScript" width="48" height="48" loading="lazy">
+                                <span class="skill-name-modern">JavaScript</span>
+                                <span class="skill-cat-modern">Frontend</span>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <div class="skill-icon">
-                                <i class="fab fa-react"></i>
+                            <!-- Node.js -->
+                            <div class="skill-card-modern">
+                                <img src="./assets/images/icons/nodejs.svg" class="skill-icon-modern" alt="Node.js"
+                                    width="48" height="48" loading="lazy">
+                                <span class="skill-name-modern">Node.js</span>
+                                <span class="skill-cat-modern">Backend</span>
                             </div>
-                            <div class="skill-info">
-                                <div class="d-flex justify-content-between mb-2">
-                                    <span class="skill-name">React</span>
-                                    <span class="skill-percentage">88%</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 88%"></div>
-                                </div>
+                            <!-- Express.js -->
+                            <div class="skill-card-modern">
+                                <img src="./assets/images/icons/express.svg" class="skill-icon-modern icon-theme-invert"
+                                    alt="Express.js" width="48" height="48" loading="lazy">
+                                <span class="skill-name-modern">Express.js</span>
+                                <span class="skill-cat-modern">Backend</span>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="skill-card">
-                        <div class="skill-header">
-                            <div class="skill-icon">
-                                <i class="fas fa-mobile-alt"></i>
+                            <!-- React.js -->
+                            <div class="skill-card-modern">
+                                <img src="./assets/images/icons/react.svg" class="skill-icon-modern" alt="React.js"
+                                    width="48" height="48" loading="lazy">
+                                <span class="skill-name-modern">React.js</span>
+                                <span class="skill-cat-modern">Frontend</span>
                             </div>
-                            <div class="skill-info">
-                                <div class="d-flex justify-content-between mb-2">
-                                    <span class="skill-name">Responsive Design</span>
-                                    <span class="skill-percentage">95%</span>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 95%"></div>
-                                </div>
+                            <!-- MongoDB -->
+                            <div class="skill-card-modern">
+                                <img src="./assets/images/icons/mongodb.svg" class="skill-icon-modern" alt="MongoDB"
+                                    width="48" height="48" loading="lazy">
+                                <span class="skill-name-modern">MongoDB</span>
+                                <span class="skill-cat-modern">Database</span>
+                            </div>
+                            <!-- MySQL -->
+                            <div class="skill-card-modern">
+                                <img src="./assets/images/icons/mysql.svg" class="skill-icon-modern" alt="MySQL"
+                                    width="48" height="48" loading="lazy">
+                                <span class="skill-name-modern">MySQL</span>
+                                <span class="skill-cat-modern">Database</span>
+                            </div>
+                            <!-- Firebase -->
+                            <div class="skill-card-modern">
+                                <img src="./assets/images/icons/firebase.svg" class="skill-icon-modern" alt="Firebase"
+                                    width="48" height="48" loading="lazy">
+                                <span class="skill-name-modern">Firebase</span>
+                                <span class="skill-cat-modern">Database</span>
+                            </div>
+                            <!-- Git -->
+                            <div class="skill-card-modern">
+                                <img src="./assets/images/icons/git.svg" class="skill-icon-modern" alt="Git" width="48"
+                                    height="48" loading="lazy">
+                                <span class="skill-name-modern">Git</span>
+                                <span class="skill-cat-modern">Version Control</span>
+                            </div>
+                            <!-- GitHub -->
+                            <div class="skill-card-modern">
+                                <img src="./assets/images/icons/github.svg" class="skill-icon-modern icon-theme-invert"
+                                    alt="GitHub" width="48" height="48" loading="lazy">
+                                <span class="skill-name-modern">GitHub</span>
+                                <span class="skill-cat-modern">Dev Tool</span>
                             </div>
                         </div>
                     </div>
@@ -297,94 +264,86 @@
     <section id="portfolio" class="portfolio-section">
         <div class="container">
             <h2 class="section-title">Recent Projects</h2>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
+            <div class="project-slider" role="region" aria-label="Recent projects" tabindex="0">
+                <div class="project-slide">
                     <div class="project-card">
                         <div class="project-image">
-                            <img src="./assets/images/E-Commerce.png" alt="E-Commerce Platform">
+                            <img src="./assets/images/college.png" alt="College Website">
                             <div class="project-overlay"></div>
                         </div>
+
                         <div class="project-content">
-                            <h3 class="project-title">E-Commerce Platform</h3>
-                            <p class="project-description">A fully responsive e-commerce website with shopping cart
-                                functionality and payment integration.</p>
-                            <p class="project-tech">React, Bootstrap, Stripe</p>
+                            <h3 class="project-title">College Website</h3>
+
+                            <p class="project-description">
+                                A modern and fully responsive college website featuring
+                                college information, academic departments, campus life,
+                                facilities and contact details.
+                            </p>
+
+                            <p class="project-tech">HTML5, CSS3, Bootstrap, JavaScript</p>
+
+                            <a href="https://naseernawaz.github.io/gct-bhakkar-website-design/" target="_blank" class="project-link">
+                                View Project <i class="fas fa-external-link-alt ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-slide">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/images/bus.png" alt="Daewoo Express Seat Booking Website">
+                            <div class="project-overlay"></div>
+                        </div>
+
+                        <div class="project-content">
+                            <h3 class="project-title">Daewoo Express Seat Booking</h3>
+
+                            <p class="project-description">
+                                A modern and responsive bus seat booking website
+                                featuring interactive seat selection, booking summary,
+                                passenger seat management and a user-friendly interface.
+                            </p>
+
+                            <p class="project-tech">HTML5, CSS3, Bootstrap, JavaScript</p>
+
+                            <a href="https://naseernawaz.github.io/DAEWOO-Seats-Booking-System/" target="_blank" class="project-link">
+                                View Project <i class="fas fa-external-link-alt ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-slide">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="./assets/images/taskmanag.png" alt="Smart College Management System">
+                            <div class="project-overlay"></div>
+                        </div>
+
+                        <div class="project-content">
+                            <h3 class="project-title">Smart College Management System</h3>
+
+                            <p class="project-description">
+                                A modern college management system designed to
+                                manage students, teachers, attendance, results,
+                                class schedules and notices through a centralized
+                                web-based dashboard.
+                            </p>
+
+                            <p class="project-tech">
+                                HTML5, CSS3, Bootstrap, JavaScript, Node.js, MongoDB
+                            </p>
+
                             <a href="#" class="project-link">
                                 View Project <i class="fas fa-external-link-alt ms-2"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="./assets/images/photo1.png" alt="Modern Portfolio">
-                            <div class="project-overlay"></div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Modern Portfolio Website</h3>
-                            <p class="project-description">A sleek and modern portfolio website with smooth animations
-                                and dark theme design.</p>
-                            <p class="project-tech">HTML, CSS, JavaScript</p>
-                            <a href="#" class="project-link">
-                                View Project <i class="fas fa-external-link-alt ms-2"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="./assets/images/taskmanag.png" alt="Task Management Dashboard">
-                            <div class="project-overlay"></div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Task Management Dashboard</h3>
-                            <p class="project-description">An intuitive dashboard for managing tasks, projects, and team
-                                collaboration.</p>
-                            <p class="project-tech">React, Tailwind CSS</p>
-                            <a href="#" class="project-link">
-                                View Project <i class="fas fa-external-link-alt ms-2"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1627634771121-fa3db5779f60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMHByb2plY3R8ZW58MXx8fHwxNzY2MDAwMTEzfDA&ixlib=rb-4.1.0&q=80&w=1080"
-                                alt="Restaurant Website">
-                            <div class="project-overlay"></div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Restaurant Website</h3>
-                            <p class="project-description">A beautiful restaurant website with online menu, reservation
-                                system, and gallery.</p>
-                            <p class="project-tech">Bootstrap, JavaScript</p>
-                            <a href="#" class="project-link">
-                                View Project <i class="fas fa-external-link-alt ms-2"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="./assets/images/apps.png" alt="Fitness Tracker App">
-                            <div class="project-overlay"></div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Fitness Tracker App</h3>
-                            <p class="project-description">Track your workouts, nutrition, and progress with this
-                                comprehensive fitness application.</p>
-                            <p class="project-tech">React, CSS Grid</p>
-                            <a href="#" class="project-link">
-                                View Project <i class="fas fa-external-link-alt ms-2"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
+
+                <div class="project-slide">
                     <div class="project-card">
                         <div class="project-image">
                             <img src="./assets/images/RealEstate.png" alt="Real Estate Platform">
@@ -439,7 +398,7 @@
                         <p class="mb-4">I'm always open to discussing new projects, creative ideas, or opportunities to
                             be part of your vision. Feel free to reach out!</p>
 
-                        <a href="mailto:naseer@example.com" class="contact-item">
+                        <a href="mailto:muhammadnaseer7025@gmail.com" class="contact-item">
                             <div class="contact-icon">
                                 <i class="fas fa-envelope"></i>
                             </div>
@@ -449,7 +408,7 @@
                             </div>
                         </a>
 
-                        <a href="tel:+1234567890" class="contact-item">
+                        <a href="tel:+923166783915" class="contact-item">
                             <div class="contact-icon">
                                 <i class="fas fa-phone"></i>
                             </div>
@@ -459,7 +418,8 @@
                             </div>
                         </a>
 
-                        <a href="https://linkedin.com" target="_blank" class="contact-item">
+                        <a href="https://linkedin.com/in/naseernawaz" target="_blank" rel="noopener noreferrer"
+                            class="contact-item">
                             <div class="contact-icon">
                                 <i class="fab fa-linkedin"></i>
                             </div>
@@ -469,13 +429,14 @@
                             </div>
                         </a>
 
-                        <a href="https://github.com" target="_blank" class="contact-item">
+                        <a href="https://github.com/naseernawaz" target="_blank" rel="noopener noreferrer"
+                            class="contact-item">
                             <div class="contact-icon">
                                 <i class="fab fa-github"></i>
                             </div>
                             <div>
                                 <div class="contact-label">GitHub</div>
-                                <div class="contact-value">https://github.com/naseernawaz</div>
+                                <div class="contact-value">github.com/naseernawaz</div>
                             </div>
                         </a>
                     </div>
@@ -489,16 +450,18 @@
         <div class="container">
             <div class="footer-content">
                 <div class="social-icons">
-                    <a href="mailto:naseer@example.com" class="social-icon">
+                    <a href="mailto:muhammadnaseer7025@gmail.com" class="social-icon" title="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
-                    <a href="https://linkedin.com" target="_blank" class="social-icon">
+                    <a href="https://linkedin.com/in/naseernawaz" target="_blank" rel="noopener noreferrer"
+                        class="social-icon" title="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://github.com" target="_blank" class="social-icon">
+                    <a href="https://github.com/naseernawaz" target="_blank" rel="noopener noreferrer"
+                        class="social-icon" title="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="tel:+1234567890" class="social-icon">
+                    <a href="tel:+923166783915" class="social-icon" title="Phone">
                         <i class="fas fa-phone"></i>
                     </a>
                 </div>
